@@ -61,17 +61,23 @@
           <div class="agile-form">
             <form action="result.html" method="post">
               <ul class="field-list" style="padding-left: 0px;">
+
                 <li class="name">
                   <label class="form-label">ADMIN<span class="form-required"> * </span></label>
                   <div class="form-input add">
                     <span class="form-sub-label">
-                      <input type="text" name="username" value="username" required style="pointer-events: none;">
+                      <input type="text" name="username" value="username" required style="width: 32%; pointer-events: none;">
                     </span>
                     <span class="form-sub-label">
-                      <input type="text" name="today" value="DD-MM-YYYY" required style="pointer-events: none;">
+                      <input type="text" name="today" value="DD-MM-YYYY" required style="width: 32%; pointer-events: none;">
+                    </span>
+                    <span class="form-sub-label">
+                      <input type="text" name="app_num"   value="50012021" style="width: 32%; pointer-events: none;" >
                     </span>
                   </div>
                 </li>
+
+             
                 <li class="name">
                   <label class="form-label">PERSON<span class="form-required"> * </span></label>
                   <div class="form-input add">
@@ -83,31 +89,29 @@
                     </span>
                   </div>
                 </li>
-                <li> 
-                  <label class="form-label">APPLICATION NUMBER<span class="form-required"> * </span></label>
-                  <div class="form-input">
-                    <input type="text" name="app_num"  value="50012021" required  style="pointer-events: none;">
-                  </div>
-                </li>
-                <li class="name">
-                  <label class="form-label">PERSON<span class="form-required"> * </span></label>
-                  <div class="form-input add">
-                    <span class="form-sub-label">
-                      <input type="text" name="sonof"  placeholder="C/O" >
-                    </span>
-                    <span class="form-sub-label">
-                      <input type="date" name="dob"  placeholder="01-06-1976" style="padding: 12px 10px;
-                      box-sizing: border-box;
-                      background-color: #fff;
-                      font-size: 15px;
-                      border: none;
-                      width: 49%;
-                      color: #333;
-                      font-family: 'Alegreya Sans', sans-serif;" >
-                    </span>
-                  </div>
-                </li>
-                <li>
+                
+
+                  <li class="name">
+                    <label class="form-label">PERSON<span class="form-required"> * </span></label>
+                    <div class="form-input add">
+                      <span class="form-sub-label">
+                        <input type="text" name="sonof"   required style="width: 32%; " placeholder="C/O">
+                      </span>
+                      <span class="form-sub-label">
+                        <input type="date" name="dob"   required style=" width: 32%;
+                        margin: 0px 0px 15px 0;
+                        padding: 12px 10px;
+                        background-color: #fff;
+                        font-size: 15px;
+                        border: none; " placeholder="C/O" >
+                      </span>
+                      <span class="form-sub-label">
+                        <input type="text" name="blood"   required style="width: 32%; " placeholder="Blood Group">
+                      </span>
+                    </div>
+                  </li>
+
+
                   <label class="form-label">Bloog group<span class="form-required"> * </span></label>
                   <div class="form-input">
                     <select class="form-dropdown" name="citizen" required>
@@ -148,21 +152,30 @@
                   </div>
                 </li>
                 <li> 
-                  <li> 
-                    <label class="form-label">
-                        WORK
-                       <span class="form-required"> * </span>
-                    </label>
-                   
+                  <li class="name">
+                    <label class="form-label">WORK<span class="form-required"> * </span></label>
                     <div class="form-input add">
-                     
                       <span class="form-sub-label">
-                        <input type="text" name="work" placeholder="work" required>
+                        <input type="text" name="work"   required style="width: 32%; " placeholder="work">
                       </span>
                       <span class="form-sub-label">
-                        <input type="text" name="fees" placeholder="fees" required>
-                      </span> 
-                      <button class="btn_add">ADD NEW</button>
+                        <input type="text" name="fees"   required style="width: 32%; " placeholder="fees">
+                      </span>
+                      <span class="form-sub-label">
+                        <input type="submit" name="dob"   required style=" width: 32%;
+                        margin: 0px 0px 15px 0;
+                        padding: 12px 10px;
+                        font-size: 15px;
+                        border: none;
+                        background-color: green; 
+ 
+        height: 50px;
+        color: white;
+        
+        font-family: calibri;
+     " value="ADD NEW"  >
+                      </span>
+                       
                     </div>
                   </li>
 
