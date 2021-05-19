@@ -60,44 +60,46 @@
           <div class="agile-form">
             <form action="result.html" method="post">
               <ul class="field-list" style="padding-left: 0px;">
-                <li> 
-                  <label class="form-label">APPLICATION NUMBER<span class="form-required"> * </span></label>
-                  <div class="form-input">
-                    <input type="text" name="app_num"  value="10012021" required  style="pointer-events: none;">
-                  </div>
-                </li>
                 <li class="name">
                   <label class="form-label">ADMIN<span class="form-required"> * </span></label>
                   <div class="form-input add">
                     <span class="form-sub-label">
-                      <input type="text" name="username" value="username" required style="pointer-events: none;">
+                      <input type="text" name="username" value="username" required style="width: 32%; pointer-events: none;">
                     </span>
                     <span class="form-sub-label">
-                      <input type="text" name="today" value="DD-MM-YYYY" required style="pointer-events: none;">
+                      <input type="text" name="today" value="DD-MM-YYYY" required style="width: 32%; pointer-events: none;">
+                    </span>
+                    <span class="form-sub-label">
+                      <input type="text" name="app_num"   value="10012021" style="width: 32%; pointer-events: none;" >
                     </span>
                   </div>
                 </li>
-                <li> 
-                  <label class="form-label">REG NO<span class="form-required"> * </span></label>
-                  <div class="form-input">
-                    <input type="text" name="reg" placeholder="KL-14 M 9672" required>
-                  
-                  </div>
-                </li>
-                <li> 
-                  <label class="form-label">CLASS<span class="form-required"> * </span></label>
-                  <div class="form-input">
-                    <input type="text" name="class" placeholder="CAR/BIKE" required >
-                  </div>
-                </li>
+               
+
                 <li class="name">
-                  <label class="form-label">MOBILE NUMBER<span class="form-required"> * </span></label>
+                  <label class="form-label">REG<span class="form-required"> * </span></label>
                   <div class="form-input add">
                     <span class="form-sub-label">
-                      <input type="text" name="NUMBER1"  placeholder="Enter first phone number"  >
+                      <input type="text"name="reg" placeholder="KL-14 M 9672" required>
                     </span>
                     <span class="form-sub-label">
-                      <input type="text" name="NUMBER2"  placeholder="Enter second phone number" >
+                      <input type="text" name="class" placeholder="CAR/BIKE" required >
+                    </span>
+                  </div>
+                </li>
+
+
+                <li class="name">
+                  <label class="form-label">PHONE  NUMBER<span class="form-required"> * </span></label>
+                  <div class="form-input add">
+                    <span class="form-sub-label">
+                      <input type="text" name="phone1"  placeholder="Phone number" style="width: 32%;" >
+                    </span>
+                    <span class="form-sub-label">
+                      <input type="text" name="phone2"  placeholder="Phone number1" style="width: 32%;" >
+                    </span>
+                    <span class="form-sub-label">
+                      <input type="text" name="phone3"   placeholder="Phone number2" style="width: 31%;" >
                     </span>
                   </div>
                 </li>
@@ -229,21 +231,30 @@
                     </span>
                   </div>
                 </li> -->
-                <li> 
-                  <label class="form-label">
-                      WORK
-                     <span class="form-required"> * </span>
-                  </label>
-                 
+                <li class="name">
+                  <label class="form-label">WORK<span class="form-required"> * </span></label>
                   <div class="form-input add">
-                   
                     <span class="form-sub-label">
-                      <input type="text" name="work" placeholder="work" required>
+                      <input type="text" name="work"   required style="width: 32%; " placeholder="work">
                     </span>
                     <span class="form-sub-label">
-                      <input type="text" name="fees" placeholder="fees" required>
-                    </span> 
-                    <button class="btn_add">ADD NEW</button>
+                      <input type="text" name="fees"   required style="width: 32%; " placeholder="fees">
+                    </span>
+                    <span class="form-sub-label">
+                      <input type="submit" name="dob"   required style=" width: 32%;
+                      margin: 0px 0px 15px 0;
+                      padding: 12px 10px;
+                      font-size: 15px;
+                      border: none;
+                      background-color: green; 
+
+      height: 50px;
+      color: white;
+      
+      font-family: calibri;
+   " value="ADD NEW"  >
+                    </span>
+                     
                   </div>
                 </li>
               </ul>
@@ -267,6 +278,9 @@
         font-size: 16px;
         font-family: calibri;
     
+      }
+      input{
+        text-transform: uppercase;
       }
     </style>
 
